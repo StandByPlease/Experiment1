@@ -1,0 +1,28 @@
+{
+  "name": "responsive-interactive-ui",
+  "version": "1.0.0",
+  "description": "A responsive and interactive UI built with Tailwind CSS",
+  "main": "index.html",
+  "scripts": {
+    "build-css": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "build": "tailwindcss -i ./src/input.css -o ./dist/output.css",
+    "dev": "npm run build-css",
+    "serve": "npx http-server . -p 3000 -o",
+    "start": "npm run build && npm run serve"
+  },
+  "keywords": [
+    "tailwindcss",
+    "responsive",
+    "interactive",
+    "ui",
+    "frontend"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.3.5",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.31",
+    "http-server": "^14.1.1"
+  }
+}
